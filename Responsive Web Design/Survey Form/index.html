@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the survey form below:</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+
+    <label for="dropdown" id="dropdown-label">Select an option:</label>
+    <select id="dropdown" name="dropdown" required>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+    </select>
+
+    <label>Choose one:</label>
+    <div id="radio-buttons">
+      <label>
+        <input type="radio" name="choice" value="option1"> Option 1
+      </label>
+      <label>
+        <input type="radio" name="choice" value="option2"> Option 2
+      </label>
+    </div>
+
+    <label>Choose multiple:</label>
+    <div id="checkboxes">
+      <label>
+        <input type="checkbox" name="option[]" value="checkbox1"> Checkbox 1
+      </label>
+      <label>
+        <input type="checkbox" name="option[]" value="checkbox2"> Checkbox 2
+      </label>
+    </div>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
