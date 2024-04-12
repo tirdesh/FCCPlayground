@@ -1,0 +1,137 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+#survey-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #111;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #d02b57; /* Red */
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #333;
+  color: #fff;
+}
+
+input[type="submit"] {
+  background-color: #d02b57; /* Red */
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #a61537; /* Darker red */
+}
+
+#radio-buttons,
+#checkboxes {
+  margin-bottom: 20px;
+}
+
+#radio-buttons label,
+#checkboxes label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Custom checkbox and radio button styles */
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #666;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: #d02b57; /* Red */
+  border-color: #d02b57; /* Red */
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+/* Custom radio button indicator */
+input[type="radio"]::before,
+input[type="checkbox"]::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked::before,
+input[type="checkbox"]:checked::before {
+  background-color: #fff;
+}
+
+/* Custom select dropdown */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 12px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Custom textarea */
+textarea {
+  resize: vertical;
+}
