@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial Black', sans-serif; /* Change font to a bold font for a superhero feel */
+  background-color: #000; /* Black background */
+  color: #fff;
+}
+
+#header {
+  background-color: #ff0000; /* Red header */
+  color: #000; /* Black text for contrast */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+video {
+  width: 100%;
+  display: block;
+  margin-top: 80px; /* Adjust based on header height */
+}
+
+#form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#email {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #ff0000; /* Red submit button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+  }
+}
